@@ -7,10 +7,7 @@ Testing out odoo Kubernetes deployment
 
 ## Setup
 
-Create a kubernetes cluster via the DigitalOcean control panel:
-https://cloud.digitalocean.com/kubernetes/clusters?i=97cc3d
-
-Then run the following shell commands:
+Create a kubernetes cluster via the DigitalOcean control panel. Then run the following shell commands:
 
 ```
 doctl auth init --context mycontext
