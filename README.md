@@ -23,12 +23,12 @@ kubectl apply -f odoo.yaml
 Check pod status until both pods are status `Running`:
 
 ```
-$ kubectl get pods -n odoo
+$ kubectl -n odoo get pods
 NAME                             READY   STATUS              RESTARTS   AGE
 odoo-7b4db4d454-jcjdd            0/1     ContainerCreating   0          62s
 odoo-postgres-675dc5b477-9kx57   1/1     Running             0          66s
 ...
-$ kubectl get pods -n odoo
+$ kubectl -n odoo get pods
 NAME                             READY   STATUS    RESTARTS   AGE
 odoo-7b4db4d454-jcjdd            1/1     Running   0          76s
 odoo-postgres-675dc5b477-9kx57   1/1     Running   0          80s
