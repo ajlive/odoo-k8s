@@ -13,6 +13,7 @@ https://cloud.digitalocean.com/kubernetes/clusters?i=97cc3d
 Then run the following shell commands:
 
 ```
+doctl auth init --context mycontext
 doctl kubernetes cluster kubeconfig save odoo --context mycontext
 kubectl create namespace odoo
 kubectl apply -f postgres.yml
